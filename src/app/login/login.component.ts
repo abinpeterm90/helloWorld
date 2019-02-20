@@ -8,12 +8,14 @@ import { Router } from '@angular/router';
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private _router: Router) { }
+username: string ;
+
+  constructor(private _router: Router) {}
 
   ngOnInit() {
   }
 greet() {
-  alert(this.username);
+   alert(this.username);
    this._router.navigateByUrl('/app-greet');
 }
 }
